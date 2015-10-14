@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/judulPengaduan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Judul Pengaduan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- TODO: pelajarin dari www.mkyong.com/android/android-spinner-drop-down-list-example buat backendnya juga -->
+        <Spinner
+            android:id="@+id/kategoriPengaduan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/kategori_pengaduan"
+            android:prompt="Pilih Kategori"
+            android:layout_weight="2" />
+
+        <CheckBox
+            android:id="@+id/setAnonym"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="Set Anonim"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/isiPengaduan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLines="8"
+        android:gravity="top|start"
+        android:scrollbars="vertical"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/attachBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attach"/>
+
+        <Button
+            android:id="@+id/buatBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buat"/>
+
+    </LinearLayout>
+
+</LinearLayout>

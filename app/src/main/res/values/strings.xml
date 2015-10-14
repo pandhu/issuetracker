@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Issue Tracker</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="kategori_pengaduan">
+        <item>Akademis</item>
+        <item>Administrasi</item>
+        <item>Fasilitas</item>
+        <item>Keamanan</item>
+    </string-array>
+</resources>
